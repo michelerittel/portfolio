@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Michele Rittel Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:url("images/background.png");
+    background-size:cover;
+    background-position:center;
+    color:#ff6f52;
+}
+
+header{
+    background:#efaea2;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid #888;
+}
+
+.logo-name{
+    font-family:'Lavishly Yours',cursive;
+    font-size:5rem;
+    text-align:center;
+    color:#005f73;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#005f73;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff6f52;
+}
+
+section{
+    padding:80px 8%;
+}
+
+h1,h2{
+    text-align:center;
+    color:#005f73;
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    font-weight:400;
+    margin-bottom:40px;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero img{
+    max-width:400px;
+    width:100%;
+    border:6px solid #005f73;
+}
+
+.hero-text{
+    max-width:700px;
+}
+
+.hero-text p{
+    font-size:2rem;
+    line-height:1.4;
+}
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    max-width:700px;
+}
+
+.about-text p{
+    font-size:1.5rem;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+.about img{
+    max-width:350px;
+    width:100%;
+    border:6px solid #8fd7d1;
+}
+
+.design-intro{
+    text-align:center;
+    font-size:1.4rem;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.card{
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.card img:hover{
+    transform:scale(1.05);
+}
+
+.card p{
+    margin-top:10px;
+    color:#003b4a;
+    font-weight:bold;
+}
+
+.programming{
+    text-align:center;
+}
+
+.programming p{
+    font-size:1.4rem;
+    max-width:900px;
+    margin:auto;
+}
+
+.project-grid{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.project{
+    background:rgba(255,255,255,.75);
+    padding:30px;
+    border-radius:12px;
+    max-width:450px;
+}
+
+.project h3{
+    color:#005f73;
+    margin-bottom:15px;
+}
+
+.project a{
+    color:#005f73;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.project a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#005f73;
+}
+
+@media(max-width:768px){
+
+    .logo-name{
+        font-size:3.5rem;
+    }
+
+    h1,h2{
+        font-size:2.5rem;
+    }
+
+    .hero-text p,
+    .about-text p,
+    .programming p{
+        font-size:1.2rem;
+    }
+
+    nav{
+        gap:15px;
+        flex-wrap:wrap;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-name">
+    Michele Rittel
+</div>
+
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#about">Über mich</a>
+    <a href="#design">Bildbearbeitung</a>
+    <a href="#programming">Programmierung</a>
+</nav>
+
+</header>
+
+<section id="home">
+
+<div class="hero">
+
+<img src="images/fotoinicio.png" alt="Michele">
+
+<div class="hero-text">
+
+<h1>Willkommen in meinem Portfolio.</h1>
+
+<p>
+Kreativität und Technologie begleiten meinen beruflichen Weg.
+Hier präsentiere ich ausgewählte Arbeiten aus den Bereichen
+Grafikdesign, digitale Kunst und Programmierung.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>Über Mich.</h2>
+
+<div class="about">
+
+<div class="about-text">
+
+<p>
+Ich bin Brasilianerin und lebe in Deutschland.
+Nach vielen Jahren als Tänzerin und Tanzpädagogin habe ich mich
+für einen beruflichen Neuanfang im Technologiebereich entschieden.
+</p>
+
+<p>
+Kreativität begleitet mich seit meiner ersten beruflichen Laufbahn,
+während Technologie schon immer eine persönliche Leidenschaft war.
+</p>
+
+<p>
+Heute verbinde ich beide Welten durch Grafikdesign,
+Bildbearbeitung und Webentwicklung.
+</p>
+
+<p>
+Mein Ziel ist es, mich als Webdesignerin und Full-Stack-Entwicklerin
+weiterzuentwickeln und digitale Lösungen zu gestalten,
+die sowohl funktional als auch visuell ansprechend sind.
+</p>
+
+</div>
+
+<img src="images/foto_ubermich.png" alt="Über mich">
+
+</div>
+
+</section>
+
+<section id="design">
+
+<h2>Bildbearbeitung</h2>
+
+<p class="design-intro">
+Eine Auswahl kreativer Arbeiten.
+Klicken Sie auf ein Bild, um die Vollversion zu öffnen.
+</p>
+
+<div class="gallery">
+
+<div class="card">
+<a href="images/portifolio1.png" target="_blank">
+<img src="images/miniatura1.png">
+</a>
+<p>Planerdesign</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio2.png" target="_blank">
+<img src="images/miniatura2.png">
+</a>
+<p>Planerdesign</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio3.png" target="_blank">
+<img src="images/miniatura3.png">
+</a>
+<p>Planerdesign</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio4.png" target="_blank">
+<img src="images/miniatura4.png">
+</a>
+<p>Digitale Malerei</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio5.png" target="_blank">
+<img src="images/miniatura5.png">
+</a>
+<p>Vektorillustration</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio6.jpg" target="_blank">
+<img src="images/miniatura6.png">
+</a>
+<p>Fotomanipulation</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio7.jpg" target="_blank">
+<img src="images/miniatura7.png">
+</a>
+<p>Flyerdesign</p>
+</div>
+
+<div class="card">
+<a href="images/portifolio8.png" target="_blank">
+<img src="images/miniatura8.png">
+</a>
+<p>Digitalmalen</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="programming">
+
+<div class="programming">
+
+<h2>Programmierung</h2>
+
+<p>
+Mein erstes Projekt im Harvard CS50 Kurs.
+</p>
+
+<div class="project-grid">
+
+<div class="project">
+
+<h3>Scratch Projekt</h3>
+
+<p>
+Interaktives Spiel entwickelt mit Scratch.
+</p>
+
+<br>
+
+<a href="https://scratch.mit.edu/projects/1334372269" target="_blank">
+Projekt öffnen →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Michele Rittel
+</footer>
+
+</body>
+</html>

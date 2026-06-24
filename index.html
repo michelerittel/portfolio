@@ -32,17 +32,41 @@ body{
 
 
 
-header{
-
-    
-    background-image:url("headercerto.png");
-    background-repeat:no-repeat;
-    background-position:left center;
-    background-size:contain;
-
+    header{
+    background:#efaea2;
     position:sticky;
     top:0;
     z-index:1000;
+    border-bottom:1px solid #888;
+}
+
+.header-top{
+    padding:10px 20px 0 20px;
+}
+
+.logo{
+    height:80px;
+    width:auto;
+    display:block;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:10px 0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#005f73;
+    font-weight:bold;
+    transition:.3s;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+
+nav a:hover{
+    color:#ff6f52;
 }
 
    
@@ -231,16 +255,20 @@ footer{
 
 <body>
 
-<header>
 
 
+    <header>
 
-<nav>
-    <a href="#home">HOME</a>
-    <a href="#about">Über mich</a>
-    <a href="#design">Bildbearbeitung</a>
-    <a href="#programming">Programmierung</a>
-</nav>
+    <div class="header-top">
+        <img src="headercerto.png" alt="Michele Rittel" class="logo">
+    </div>
+
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">Über mich</a>
+        <a href="#design">Bildbearbeitung</a>
+        <a href="#programming">Programmierung</a>
+    </nav>
 
 </header>
 

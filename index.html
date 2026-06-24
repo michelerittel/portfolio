@@ -32,17 +32,21 @@ body{
 
 
 
-    header{
+header{
     background:#FFB1A4;
+
     position:sticky;
     top:0;
     z-index:1000;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:10px 30px;
     border-bottom:1px solid #888;
 }
 
-.header-top{
-    padding:10px 20px 0 20px;
-}
 
 .logo{
     height:80px;
@@ -257,11 +261,11 @@ footer{
 
 
 
+
+
     <header>
 
-    <div class="header-top">
-        <img src="logo.png" alt="Michele Rittel" class="logo">
-    </div>
+    <img src="logo.png" alt="Michele Rittel" class="logo">
 
     <nav>
         <a href="#home">HOME</a>
@@ -271,14 +275,6 @@ footer{
     </nav>
 
 </header>
-
-<section id="home">
-
-<div class="hero">
-
-<img src="fotoinicio.png" alt="Michele">
-
-<div class="hero-text">
 
 <h1>Willkommen in meinem Portfolio.</h1>
 

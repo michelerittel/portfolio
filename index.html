@@ -32,28 +32,29 @@ body{
 
 
 
-header{
-    background:#FFB1A4;
+    header{
+    background:#efaea2;
     position:sticky;
     top:0;
     z-index:1000;
+    border-bottom:1px solid #888;
+}
 
-    display:flex;
-    align-items:center;
-
-    padding:10px 30px;
+.header-top{
+    padding:10px 20px 0 20px;
 }
 
 .logo{
     height:80px;
     width:auto;
-    filter:drop-shadow(3px 3px 6px rgba(0,95,115,0.35));
+    display:block;
 }
 
 nav{
     display:flex;
+    justify-content:center;
     gap:40px;
-    margin-left:auto;
+    padding:10px 0;
 }
 
 nav a{
@@ -61,12 +62,33 @@ nav a{
     color:#005f73;
     font-weight:bold;
     transition:.3s;
-    text-shadow:2px 2px 4px rgba(0,95,115,0.25);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 nav a:hover{
     color:#ff6f52;
 }
+
+   
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#005f73;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff6f52;
+}
+
 section{
     padding:80px 8%;
 }
@@ -235,11 +257,11 @@ footer{
 
 
 
-
-
     <header>
 
-    <img src="logo.png" alt="Michele Rittel" class="logo">
+    <div class="header-top">
+        <img src="headercerto.png" alt="Michele Rittel" class="logo">
+    </div>
 
     <nav>
         <a href="#home">HOME</a>
@@ -249,6 +271,14 @@ footer{
     </nav>
 
 </header>
+
+<section id="home">
+
+<div class="hero">
+
+<img src="fotoinicio.png" alt="Michele">
+
+<div class="hero-text">
 
 <h1>Willkommen in meinem Portfolio.</h1>
 
@@ -375,7 +405,7 @@ Klicken Sie auf ein Bild, um die Vollversion zu öffnen.
 <h2>Programmierung</h2>
 
 <p>
-Meine Projekte aus dem HarvardX CS50 Introduction to Computer Science Kurs.
+Mein erstes Projekt im HarvardX CS50 Introduction to Computer Science Kurs.
 </p>
 
 <div class="project-grid">
